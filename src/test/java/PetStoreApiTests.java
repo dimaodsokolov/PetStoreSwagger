@@ -1,12 +1,12 @@
 import org.assertj.core.api.Assertions;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import petstore.api.dto.User;
 import petstore.api.dto.UserResponse;
 
 import static io.restassured.RestAssured.given;
 
-import static utils.Const.USER;
+import static petstore.api.utils.Const.USER;
 
 public class PetStoreApiTests extends BaseApiTest{
     private static User user = null;

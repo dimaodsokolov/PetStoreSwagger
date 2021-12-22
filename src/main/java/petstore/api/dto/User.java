@@ -1,7 +1,5 @@
 package petstore.api.dto;
 
-import java.util.Objects;
-
 public class User {
     public Long id;
     public String username;

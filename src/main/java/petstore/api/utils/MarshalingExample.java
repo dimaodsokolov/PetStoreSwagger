@@ -1,4 +1,4 @@
-package utils;
+package petstore.api.utils;
 
 import petstore.api.dto.User;
 import com.fasterxml.jackson.core.JsonProcessingException;

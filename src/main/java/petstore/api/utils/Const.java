@@ -1,4 +1,4 @@
-package utils;
+package petstore.api.utils;
 
 public class Const {
     public static final String BASE_URL = "https://petstore.swagger.io";
