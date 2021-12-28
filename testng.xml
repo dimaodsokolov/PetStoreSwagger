@@ -6,7 +6,7 @@
             <class name="UserApiTest">
                 <methods>
                     <include name="canAddUser" />
-                    <include name="canUpdateUserV2" />
+                    <include name="canDeleteUser" />
 
                 </methods>
             </class>
