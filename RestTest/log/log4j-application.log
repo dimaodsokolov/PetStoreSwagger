@@ -11369,3 +11369,409 @@
 2021-12-20 23:40:13 DEBUG wire:73 -  << "[\r][\n]"
 2021-12-20 23:40:13 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4ccdacf5
 2021-12-20 23:40:13 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-12-28 21:05:51 DEBUG Log:17 - Send POST request Create user : 
+ User{id=1, username='name1', firstName='Petr', lastName='Petrov', email='pertov@gmail.com', password='pass', phone='+380111111111', userStatus=1}
+2021-12-28 21:05:53 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2021-12-28 21:05:53 DEBUG DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2021-12-28 21:05:55 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-12-28 21:05:55 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-12-28 21:05:55 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-12-28 21:05:55 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-12-28 21:05:55 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-12-28 21:05:55 DEBUG DefaultClientConnection:274 - Sending request: POST /v2/user HTTP/1.1
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "POST /v2/user HTTP/1.1[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "Content-Length: 150[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  >> "[\r][\n]"
+2021-12-28 21:05:55 DEBUG headers:278 - >> POST /v2/user HTTP/1.1
+2021-12-28 21:05:55 DEBUG headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2021-12-28 21:05:55 DEBUG headers:281 - >> Content-Type: application/json
+2021-12-28 21:05:55 DEBUG headers:281 - >> Content-Length: 150
+2021-12-28 21:05:55 DEBUG headers:281 - >> Host: petstore.swagger.io
+2021-12-28 21:05:55 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-12-28 21:05:55 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+2021-12-28 21:05:55 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-12-28 21:05:55 DEBUG wire:87 -  >> "{"id":1,"username":"name1","firstName":"Petr","lastName":"Petrov","email":"pertov@gmail.com","password":"pass","phone":"+380111111111","userStatus":1}"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "Date: Tue, 28 Dec 2021 19:05:56 GMT[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:05:55 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-12-28 21:05:55 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-12-28 21:05:55 DEBUG headers:265 - << Date: Tue, 28 Dec 2021 19:05:56 GMT
+2021-12-28 21:05:55 DEBUG headers:265 - << Content-Type: application/json
+2021-12-28 21:05:55 DEBUG headers:265 - << Transfer-Encoding: chunked
+2021-12-28 21:05:55 DEBUG headers:265 - << Connection: keep-alive
+2021-12-28 21:05:55 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2021-12-28 21:05:55 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2021-12-28 21:05:55 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2021-12-28 21:05:55 DEBUG headers:265 - << Server: Jetty(9.2.9.v20150224)
+2021-12-28 21:05:55 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-12-28 21:05:55 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2021-12-28 21:05:55 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-12-28 21:05:55 DEBUG wire:73 -  << "2b[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:87 -  << "{"code":200,"type":"unknown","message":"1"}"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "0[\r][\n]"
+2021-12-28 21:05:55 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:05:55 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@624b3544
+2021-12-28 21:05:55 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-12-28 21:05:55 INFO  Log:13 - POST RESPONSE: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1"
+}
+2021-12-28 21:05:55 ERROR Log:17 - C:\ not found!!
+2021-12-28 21:05:56 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2021-12-28 21:05:56 DEBUG DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2021-12-28 21:05:56 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-12-28 21:05:56 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-12-28 21:05:56 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-12-28 21:05:56 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-12-28 21:05:56 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-12-28 21:05:56 DEBUG DefaultClientConnection:274 - Sending request: GET /v2/user/name1 HTTP/1.1
+2021-12-28 21:05:56 DEBUG wire:73 -  >> "GET /v2/user/name1 HTTP/1.1[\r][\n]"
+2021-12-28 21:05:56 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-12-28 21:05:56 DEBUG wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2021-12-28 21:05:56 DEBUG wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2021-12-28 21:05:56 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-12-28 21:05:56 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)[\r][\n]"
+2021-12-28 21:05:56 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-12-28 21:05:56 DEBUG wire:73 -  >> "[\r][\n]"
+2021-12-28 21:05:56 DEBUG headers:278 - >> GET /v2/user/name1 HTTP/1.1
+2021-12-28 21:05:56 DEBUG headers:281 - >> Content-Type: application/json
+2021-12-28 21:05:56 DEBUG headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2021-12-28 21:05:56 DEBUG headers:281 - >> Host: petstore.swagger.io
+2021-12-28 21:05:56 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-12-28 21:05:56 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+2021-12-28 21:05:56 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-12-28 21:05:57 DEBUG wire:73 -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "Date: Tue, 28 Dec 2021 19:05:57 GMT[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:05:57 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 404 Not Found
+2021-12-28 21:05:57 DEBUG headers:262 - << HTTP/1.1 404 Not Found
+2021-12-28 21:05:57 DEBUG headers:265 - << Date: Tue, 28 Dec 2021 19:05:57 GMT
+2021-12-28 21:05:57 DEBUG headers:265 - << Content-Type: application/json
+2021-12-28 21:05:57 DEBUG headers:265 - << Transfer-Encoding: chunked
+2021-12-28 21:05:57 DEBUG headers:265 - << Connection: keep-alive
+2021-12-28 21:05:57 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2021-12-28 21:05:57 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2021-12-28 21:05:57 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2021-12-28 21:05:57 DEBUG headers:265 - << Server: Jetty(9.2.9.v20150224)
+2021-12-28 21:05:57 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-12-28 21:05:57 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2021-12-28 21:05:57 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-12-28 21:05:57 DEBUG wire:73 -  << "34[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:87 -  << "{"code":1,"type":"error","message":"User not found"}"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "0[\r][\n]"
+2021-12-28 21:05:57 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:05:57 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@79f5a6ed
+2021-12-28 21:05:57 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-12-28 21:07:17 DEBUG Log:17 - Send POST request Create user : 
+ User{id=1, username='name1', firstName='Petr', lastName='Petrov', email='pertov@gmail.com', password='pass', phone='+380111111111', userStatus=1}
+2021-12-28 21:07:18 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2021-12-28 21:07:19 DEBUG DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2021-12-28 21:07:20 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-12-28 21:07:20 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-12-28 21:07:20 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-12-28 21:07:20 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-12-28 21:07:20 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-12-28 21:07:20 DEBUG DefaultClientConnection:274 - Sending request: POST /v2/user HTTP/1.1
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "POST /v2/user HTTP/1.1[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "Content-Length: 150[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  >> "[\r][\n]"
+2021-12-28 21:07:20 DEBUG headers:278 - >> POST /v2/user HTTP/1.1
+2021-12-28 21:07:20 DEBUG headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2021-12-28 21:07:20 DEBUG headers:281 - >> Content-Type: application/json
+2021-12-28 21:07:20 DEBUG headers:281 - >> Content-Length: 150
+2021-12-28 21:07:20 DEBUG headers:281 - >> Host: petstore.swagger.io
+2021-12-28 21:07:20 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-12-28 21:07:20 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+2021-12-28 21:07:20 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-12-28 21:07:20 DEBUG wire:87 -  >> "{"id":1,"username":"name1","firstName":"Petr","lastName":"Petrov","email":"pertov@gmail.com","password":"pass","phone":"+380111111111","userStatus":1}"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "Date: Tue, 28 Dec 2021 19:07:21 GMT[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2021-12-28 21:07:20 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:20 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-12-28 21:07:20 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-12-28 21:07:20 DEBUG headers:265 - << Date: Tue, 28 Dec 2021 19:07:21 GMT
+2021-12-28 21:07:20 DEBUG headers:265 - << Content-Type: application/json
+2021-12-28 21:07:20 DEBUG headers:265 - << Transfer-Encoding: chunked
+2021-12-28 21:07:20 DEBUG headers:265 - << Connection: keep-alive
+2021-12-28 21:07:20 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2021-12-28 21:07:20 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2021-12-28 21:07:20 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2021-12-28 21:07:20 DEBUG headers:265 - << Server: Jetty(9.2.9.v20150224)
+2021-12-28 21:07:20 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-12-28 21:07:20 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2021-12-28 21:07:20 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-12-28 21:07:21 DEBUG wire:73 -  << "2b[\r][\n]"
+2021-12-28 21:07:21 DEBUG wire:87 -  << "{"code":200,"type":"unknown","message":"1"}"
+2021-12-28 21:07:21 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:21 DEBUG wire:73 -  << "0[\r][\n]"
+2021-12-28 21:07:21 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:21 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@71531dd7
+2021-12-28 21:07:21 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-12-28 21:07:21 INFO  Log:13 - POST RESPONSE: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1"
+}
+2021-12-28 21:07:21 ERROR Log:17 - C:\ not found!!
+2021-12-28 21:07:21 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2021-12-28 21:07:21 DEBUG DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2021-12-28 21:07:22 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-12-28 21:07:22 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-12-28 21:07:22 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-12-28 21:07:22 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-12-28 21:07:22 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-12-28 21:07:22 DEBUG DefaultClientConnection:274 - Sending request: GET /v2/user/name1 HTTP/1.1
+2021-12-28 21:07:22 DEBUG wire:73 -  >> "GET /v2/user/name1 HTTP/1.1[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  >> "[\r][\n]"
+2021-12-28 21:07:22 DEBUG headers:278 - >> GET /v2/user/name1 HTTP/1.1
+2021-12-28 21:07:22 DEBUG headers:281 - >> Content-Type: application/json
+2021-12-28 21:07:22 DEBUG headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2021-12-28 21:07:22 DEBUG headers:281 - >> Host: petstore.swagger.io
+2021-12-28 21:07:22 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-12-28 21:07:22 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+2021-12-28 21:07:22 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-12-28 21:07:22 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "Date: Tue, 28 Dec 2021 19:07:22 GMT[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:22 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-12-28 21:07:22 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-12-28 21:07:22 DEBUG headers:265 - << Date: Tue, 28 Dec 2021 19:07:22 GMT
+2021-12-28 21:07:22 DEBUG headers:265 - << Content-Type: application/json
+2021-12-28 21:07:22 DEBUG headers:265 - << Transfer-Encoding: chunked
+2021-12-28 21:07:22 DEBUG headers:265 - << Connection: keep-alive
+2021-12-28 21:07:22 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2021-12-28 21:07:22 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2021-12-28 21:07:22 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2021-12-28 21:07:22 DEBUG headers:265 - << Server: Jetty(9.2.9.v20150224)
+2021-12-28 21:07:22 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-12-28 21:07:22 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2021-12-28 21:07:22 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-12-28 21:07:22 DEBUG wire:73 -  << "96[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:87 -  << "{"id":1,"username":"name1","firstName":"Petr","lastName":"Petrov","email":"pertov@gmail.com","password":"pass","phone":"+380111111111","userStatus":1}"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "0[\r][\n]"
+2021-12-28 21:07:22 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:22 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@216f01
+2021-12-28 21:07:22 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-12-28 21:07:22 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2021-12-28 21:07:22 DEBUG DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2021-12-28 21:07:23 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-12-28 21:07:23 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-12-28 21:07:23 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-12-28 21:07:23 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-12-28 21:07:23 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-12-28 21:07:23 DEBUG DefaultClientConnection:274 - Sending request: GET /v2/user/name1 HTTP/1.1
+2021-12-28 21:07:23 DEBUG wire:73 -  >> "GET /v2/user/name1 HTTP/1.1[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  >> "[\r][\n]"
+2021-12-28 21:07:23 DEBUG headers:278 - >> GET /v2/user/name1 HTTP/1.1
+2021-12-28 21:07:23 DEBUG headers:281 - >> Content-Type: application/json
+2021-12-28 21:07:23 DEBUG headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2021-12-28 21:07:23 DEBUG headers:281 - >> Host: petstore.swagger.io
+2021-12-28 21:07:23 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-12-28 21:07:23 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+2021-12-28 21:07:23 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-12-28 21:07:23 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "Date: Tue, 28 Dec 2021 19:07:24 GMT[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:23 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-12-28 21:07:23 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-12-28 21:07:23 DEBUG headers:265 - << Date: Tue, 28 Dec 2021 19:07:24 GMT
+2021-12-28 21:07:23 DEBUG headers:265 - << Content-Type: application/json
+2021-12-28 21:07:23 DEBUG headers:265 - << Transfer-Encoding: chunked
+2021-12-28 21:07:23 DEBUG headers:265 - << Connection: keep-alive
+2021-12-28 21:07:23 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2021-12-28 21:07:23 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2021-12-28 21:07:23 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2021-12-28 21:07:23 DEBUG headers:265 - << Server: Jetty(9.2.9.v20150224)
+2021-12-28 21:07:23 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-12-28 21:07:23 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2021-12-28 21:07:23 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-12-28 21:07:23 DEBUG wire:73 -  << "96[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:87 -  << "{"id":1,"username":"name1","firstName":"Petr","lastName":"Petrov","email":"pertov@gmail.com","password":"pass","phone":"+380111111111","userStatus":1}"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "0[\r][\n]"
+2021-12-28 21:07:23 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:23 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@22686ddb
+2021-12-28 21:07:23 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-12-28 21:07:23 DEBUG Log:27 - Send PUT request Update user : 
+ User{id=1, username='name1', firstName='Petr', lastName='Petrov', email='pertov@gmail.com', password='pass', phone='3801234567', userStatus=1}
+2021-12-28 21:07:23 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2021-12-28 21:07:23 DEBUG DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2021-12-28 21:07:24 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-12-28 21:07:24 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-12-28 21:07:24 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-12-28 21:07:24 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-12-28 21:07:24 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-12-28 21:07:24 DEBUG DefaultClientConnection:274 - Sending request: PUT /v2/user/name1 HTTP/1.1
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "PUT /v2/user/name1 HTTP/1.1[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "Content-Length: 147[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  >> "[\r][\n]"
+2021-12-28 21:07:24 DEBUG headers:278 - >> PUT /v2/user/name1 HTTP/1.1
+2021-12-28 21:07:24 DEBUG headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2021-12-28 21:07:24 DEBUG headers:281 - >> Content-Type: application/json
+2021-12-28 21:07:24 DEBUG headers:281 - >> Content-Length: 147
+2021-12-28 21:07:24 DEBUG headers:281 - >> Host: petstore.swagger.io
+2021-12-28 21:07:24 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-12-28 21:07:24 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+2021-12-28 21:07:24 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-12-28 21:07:24 DEBUG wire:87 -  >> "{"id":1,"username":"name1","firstName":"Petr","lastName":"Petrov","email":"pertov@gmail.com","password":"pass","phone":"3801234567","userStatus":1}"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "Date: Tue, 28 Dec 2021 19:07:25 GMT[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:24 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-12-28 21:07:24 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-12-28 21:07:24 DEBUG headers:265 - << Date: Tue, 28 Dec 2021 19:07:25 GMT
+2021-12-28 21:07:24 DEBUG headers:265 - << Content-Type: application/json
+2021-12-28 21:07:24 DEBUG headers:265 - << Transfer-Encoding: chunked
+2021-12-28 21:07:24 DEBUG headers:265 - << Connection: keep-alive
+2021-12-28 21:07:24 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2021-12-28 21:07:24 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2021-12-28 21:07:24 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2021-12-28 21:07:24 DEBUG headers:265 - << Server: Jetty(9.2.9.v20150224)
+2021-12-28 21:07:24 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-12-28 21:07:24 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2021-12-28 21:07:24 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-12-28 21:07:24 DEBUG wire:73 -  << "2b[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:87 -  << "{"code":200,"type":"unknown","message":"1"}"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "0[\r][\n]"
+2021-12-28 21:07:24 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:24 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5c573229
+2021-12-28 21:07:24 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-12-28 21:07:24 INFO  Log:24 - POST RESPONSE: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1"
+}
+2021-12-28 21:07:24 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2021-12-28 21:07:24 DEBUG DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2021-12-28 21:07:25 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-12-28 21:07:25 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-12-28 21:07:25 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-12-28 21:07:25 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-12-28 21:07:25 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-12-28 21:07:25 DEBUG DefaultClientConnection:274 - Sending request: GET /v2/user/name1 HTTP/1.1
+2021-12-28 21:07:25 DEBUG wire:73 -  >> "GET /v2/user/name1 HTTP/1.1[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  >> "[\r][\n]"
+2021-12-28 21:07:25 DEBUG headers:278 - >> GET /v2/user/name1 HTTP/1.1
+2021-12-28 21:07:25 DEBUG headers:281 - >> Content-Type: application/json
+2021-12-28 21:07:25 DEBUG headers:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+2021-12-28 21:07:25 DEBUG headers:281 - >> Host: petstore.swagger.io
+2021-12-28 21:07:25 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-12-28 21:07:25 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+2021-12-28 21:07:25 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-12-28 21:07:25 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "Date: Tue, 28 Dec 2021 19:07:26 GMT[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:25 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-12-28 21:07:25 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-12-28 21:07:25 DEBUG headers:265 - << Date: Tue, 28 Dec 2021 19:07:26 GMT
+2021-12-28 21:07:25 DEBUG headers:265 - << Content-Type: application/json
+2021-12-28 21:07:25 DEBUG headers:265 - << Transfer-Encoding: chunked
+2021-12-28 21:07:25 DEBUG headers:265 - << Connection: keep-alive
+2021-12-28 21:07:25 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2021-12-28 21:07:25 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2021-12-28 21:07:25 DEBUG headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2021-12-28 21:07:25 DEBUG headers:265 - << Server: Jetty(9.2.9.v20150224)
+2021-12-28 21:07:25 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-12-28 21:07:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2021-12-28 21:07:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-12-28 21:07:25 DEBUG wire:73 -  << "93[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:87 -  << "{"id":1,"username":"name1","firstName":"Petr","lastName":"Petrov","email":"pertov@gmail.com","password":"pass","phone":"3801234567","userStatus":1}"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "0[\r][\n]"
+2021-12-28 21:07:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-12-28 21:07:25 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6f2d3391
+2021-12-28 21:07:25 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
